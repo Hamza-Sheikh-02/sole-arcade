@@ -1,8 +1,7 @@
 import React from "react";
 import { ShoppingBag } from "lucide-react";
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRight, FaStar } from "react-icons/fa";
 import { GiRunningShoe } from "react-icons/gi";
-import { FaStar } from "react-icons/fa";
 import { Button } from "./ui/button";
 
 function Services() {
