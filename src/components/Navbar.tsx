@@ -35,17 +35,26 @@ const Navbar = () => {
                     <summary>Categories</summary>
                     <ul className="p-2 space-y-2">
                       <li>
-                        <Link href="/men" className="hover:text-primary">
+                        <Link
+                          href="/product/men"
+                          className="hover:text-primary"
+                        >
                           Men
                         </Link>
                       </li>
                       <li>
-                        <Link href="/women" className="hover:text-primary">
+                        <Link
+                          href="/product/women"
+                          className="hover:text-primary"
+                        >
                           Women
                         </Link>
                       </li>
                       <li>
-                        <Link href="/kids" className="hover:text-primary">
+                        <Link
+                          href="/product/kids"
+                          className="hover:text-primary"
+                        >
                           Kids
                         </Link>
                       </li>
@@ -82,17 +91,17 @@ const Navbar = () => {
               <summary>Categories</summary>
               <ul className="p-2 bg-background dark:bg-card rounded-lg shadow-md space-y-2">
                 <li>
-                  <Link href="/men" className="hover:text-primary">
+                  <Link href="/product/men" className="hover:text-primary">
                     Men
                   </Link>
                 </li>
                 <li>
-                  <Link href="/women" className="hover:text-primary">
+                  <Link href="/product/women" className="hover:text-primary">
                     Women
                   </Link>
                 </li>
                 <li>
-                  <Link href="/kids" className="hover:text-primary">
+                  <Link href="/product/kids" className="hover:text-primary">
                     Kids
                   </Link>
                 </li>
