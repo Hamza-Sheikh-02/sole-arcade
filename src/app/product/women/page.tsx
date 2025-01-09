@@ -52,7 +52,7 @@ function ProductCard({ product }: { product: any }) {
         </p>
       </CardContent>
       <CardFooter className="p-4">
-        <Link href={`/product/men/${product.slug}`}>
+        <Link href={`/product/women/${product.slug}`}>
           <Button className="">See Details</Button>
         </Link>
       </CardFooter>
@@ -63,11 +63,11 @@ function ProductCard({ product }: { product: any }) {
 export default async function BestSelling() {
   const products = await fetchProducts();
 
-  const menProducts = products.filter(
+  const womenProducts = products.filter(
     (product: any) => product.category === "women"
   );
 
-  if (!menProducts || menProducts.length === 0) {
+  if (!womenProducts || womenProducts.length === 0) {
     return <div>No products found for Women.</div>;
   }
 
@@ -82,7 +82,7 @@ export default async function BestSelling() {
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-6">
-        {menProducts.map((product: any, index: any) => (
+        {womenProducts.map((product: any, index: any) => (
           <ProductCard key={index} product={product} />
         ))}
       </div>
