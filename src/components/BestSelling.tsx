@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/card";
 import { Button } from "./ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 const builder = imageUrlBuilder(client);
 
@@ -22,7 +23,8 @@ async function fetchProducts() {
     name,
     price,
     images[0],
-    category
+    category,
+    "slug": slug.current
   }`;
   const products = await client.fetch(query);
   return products;
@@ -55,7 +57,9 @@ function ProductCard({ product }: { product: any }) {
         </p>
       </CardContent>
       <CardFooter className="p-4">
-        <Button className="">See Details</Button>
+        <Link href={`/product/${product.category}/${product.slug}`}>
+          <Button className="">See Details</Button>
+        </Link>
       </CardFooter>
     </Card>
   );
