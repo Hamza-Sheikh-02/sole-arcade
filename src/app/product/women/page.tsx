@@ -68,14 +68,14 @@ export default async function BestSelling() {
   );
 
   if (!womenProducts || womenProducts.length === 0) {
-    return <div>No products found for Women.</div>;
+    return <div>No products found for women.</div>;
   }
 
   return (
     <div className="mb-20 mt-20">
       <div className="text-center mb-10">
         <h1 className="sm:text-4xl text-3xl font-bold mb-4">
-          Our Best Products for Women
+          Our Best Products for women
         </h1>
         <div className="flex justify-center">
           <div className="w-16 h-1 rounded-full bg-primary" />
