@@ -68,6 +68,8 @@ export default async function BestSelling() {
     return <div>Loading products...</div>;
   }
 
+  const limitedProducts = products.slice(0, 8);
+
   return (
     <div className="mb-20 mt-20">
       <div className="text-center mb-10">
@@ -79,7 +81,7 @@ export default async function BestSelling() {
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-6">
-        {products.map((product: any, index: any) => (
+        {limitedProducts.map((product: any, index: any) => (
           <ProductCard key={index} product={product} />
         ))}
       </div>
