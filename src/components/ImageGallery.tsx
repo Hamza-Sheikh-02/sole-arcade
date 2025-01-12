@@ -79,6 +79,7 @@ function ImageGallery({ slugs }: ImageGalleryProps) {
             alt="Main Image"
             width={420}
             height={360}
+            priority
             className="h-full w-full object-cover object-center rounded-lg"
           />
         ) : (
