@@ -121,9 +121,11 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end space-x-1 lg:space-x-3">
-        <button className="btn btn-ghost">
-          <FaShoppingCart className="text-lg" />
-        </button>
+        <Link href={"/shopping-cart"}>
+          <button className="btn btn-ghost">
+            <FaShoppingCart className="text-lg" />
+          </button>
+        </Link>
         <button className="btn btn-ghost">
           <FaUser className="text-lg" />
         </button>

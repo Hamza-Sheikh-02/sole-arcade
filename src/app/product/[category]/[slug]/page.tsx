@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Truck } from "lucide-react";
 import { FaStar } from "react-icons/fa";
 import BestSelling from "@/components/BestSelling";
+import AddToCard from "@/components/AddToCard";
 
 export interface FullProduct {
   _id: string;
@@ -91,7 +92,13 @@ async function ProductPage({ params }: { params: Promise<{ slug: string }> }) {
               <span className="text-sm">2-4 Day Shipping</span>
             </div>
             <div className="flex gap-2.5">
-              <Button>Add to Cart</Button>
+              <AddToCard
+                name={product.name}
+                description={product.description}
+                price={product.price}
+                image={product.images[0]}
+                currency="PKR"
+              />
               <Button variant={"secondary"}>Buy Now</Button>
             </div>
             <p className="mt-12 text-base text-muted-foreground tracking-wide">
