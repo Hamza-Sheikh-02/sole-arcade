@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-// app/category/[category]/page.tsx
 import React from "react";
 import { client } from "@/sanity/lib/client";
 import imageUrlBuilder from "@sanity/image-url";
@@ -36,7 +35,7 @@ export default async function CategoryPage({
 }: {
   params: Promise<{ category: string }>;
 }) {
-  const { category } = await params; // Resolving category from params
+  const { category } = await params;
   const products = await fetchProducts(category);
 
   if (!products || products.length === 0) {
