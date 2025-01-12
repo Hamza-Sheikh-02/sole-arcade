@@ -41,7 +41,7 @@ const product = {
         list: [
           { title: "Men", value: "men" },
           { title: "Women", value: "women" },
-          { title: "Kid", value: "kid" },
+          { title: "Kids", value: "kids" },
         ],
         layout: "radio",
       },
