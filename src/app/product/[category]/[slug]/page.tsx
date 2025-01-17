@@ -46,7 +46,7 @@ async function ProductPage({ params }: { params: Promise<{ slug: string }> }) {
 
   const product: FullProduct = await fetchProduct(slug);
 
-  const discountedPrice = product.price - 500;
+  const discountedPrice = product.price - 5000;
 
   return (
     <>
